@@ -45,8 +45,6 @@ func (a *Adapter) DefaultAdvertisement() *Advertisement {
 //
 // On Linux with BlueZ, it is not possible to set the advertisement interval.
 func (a *Advertisement) Configure(options AdvertisementOptions) error {
-	fmt.Printf("Properties :\n")
-	fmt.Print(a)
 	//if a.properties != nil {
 	//	panic("todo: configure advertisement a second time")
 	//}
