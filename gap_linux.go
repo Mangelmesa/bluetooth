@@ -45,9 +45,11 @@ func (a *Adapter) DefaultAdvertisement() *Advertisement {
 //
 // On Linux with BlueZ, it is not possible to set the advertisement interval.
 func (a *Advertisement) Configure(options AdvertisementOptions) error {
-	if a.properties != nil {
-		panic("todo: configure advertisement a second time")
-	}
+	fmt.Printf(Properties :\n")
+	fmt.Print(a)
+	//if a.properties != nil {
+	//	panic("todo: configure advertisement a second time")
+	//}
 
 	var serviceUUIDs []string
 	for _, uuid := range options.ServiceUUIDs {
